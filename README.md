@@ -19,8 +19,11 @@ This program is written in C#, which means you need this language installed on y
 ### Obtaining .exe file
 
 * First, go inside the folder which stores the cs file to compile it.
-* Second, you have to locate the **csc** (C# compiler). Normally it is stored in this path: c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.
-Write that path followed by: filename.cs. A new .exe file should appear in current folder. 
+* Second, you have to locate the **csc** (C# compiler). Normally it is stored in this path: c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc. Note that you have to compile three files (all at once): ImageRebuild.cs, Controller.cs and PathInfo.cs To do so, try something like this:
+
+```
+C:\Users\Iván\Desktop\SECUREREPOS\ImageRebuild\ImageRebuild>c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc ImageRebuild.cs C:\Users\Iván\Desktop\SECUREREPOS\ImageRebuild\ImageRebuild\Controller\Controller.cs C:\Users\Iván\Desktop\SECUREREPOS\ImageRebuild\ImageRebuild\Entities\PathInfo.cs
+```
 
 ### Using .exe file
 
